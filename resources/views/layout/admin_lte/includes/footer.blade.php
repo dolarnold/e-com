@@ -1,8 +1,8 @@
 <footer class="main-footer">
     <!-- To the right -->
-    <div class="pull-right hidden-xs">
+    <div class="float-right d-none d-sm-inline">
         Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright © 2020 <a href="#">Dol Inc</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; {{date('Y')}} <a href="#">Company</a>.</strong> All rights reserved.
 </footer>
