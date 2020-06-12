@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('admin')->namespace('admin')->group(function () {
+//  All Admin Routes Defined here
+    Route::get('dashboard', 'AdminController@dashboard');
+});
+
+
+Route::get('/test', 'test\TestController@getTest');
+
+//Route::get('dashboard','admin\AdminController@dashboard');
+//Route::get('shop','ShopController@dashboard');
+
